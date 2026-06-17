@@ -44,17 +44,17 @@ cask "aice" do
     end
   end
 
-  version "0.1.8"
+  version "0.2.0"
 
   on_macos do
     on_intel do
-      sha256 "03076d54e1dfdf8e07fc9214972f4f806069f0ee23b350e6764f92cb8f4b517e"
+      sha256 "96bef209fd6679f6c4f48b8ab35e96636dba52410f206192dab6f5d3193681e8"
       url "https://github.com/propra-tech/aice/releases/download/v#{version}/aice_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/propra-tech/aice/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
     end
     on_arm do
-      sha256 "479d2a90d383200d3ef90a90a764f5ceb3e2ff76fe92e23ea93da762c56ff0d2"
+      sha256 "d2004807c57f6d31e19c3fede9afacb1932d94ff27e6106bdd04a10946452a19"
       url "https://github.com/propra-tech/aice/releases/download/v#{version}/aice_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/propra-tech/aice/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
@@ -63,13 +63,13 @@ cask "aice" do
 
   on_linux do
     on_intel do
-      sha256 "02e975e751cc8d37fb0557050608be577fb86dd1c41f43989012901e5f423fa1"
+      sha256 "c10780f970a9fa8569c7d36490852a7a467398348fa4bdcb03c7a0036f566703"
       url "https://github.com/propra-tech/aice/releases/download/v#{version}/aice_#{version}_linux_amd64.tar.gz",
         verified: "github.com/propra-tech/aice/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
     end
     on_arm do
-      sha256 "fe6140f246887862cdfc62f3ca0e1bd63889fcb6b8291c18332c885ebc6f27f3"
+      sha256 "7f7bc62cf7eaf56b617da4235bdde7a5cfa4d311eaecc55d99ccab44b6dec9e8"
       url "https://github.com/propra-tech/aice/releases/download/v#{version}/aice_#{version}_linux_arm64.tar.gz",
         verified: "github.com/propra-tech/aice/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
