@@ -44,41 +44,41 @@ cask "aice" do
     end
   end
 
-  version "0.9.0"
+  version "0.10.0"
 
   on_macos do
     on_intel do
-      sha256 "7ff2e7b1a6d6d2d79d83c3539272aae5f1a6a64113923a161ccae1efdc9dfec3"
-      url "https://github.com/propra-tech/aice/releases/download/v#{version}/aice_#{version}_darwin_amd64.tar.gz",
-        verified: "github.com/propra-tech/aice/",
+      sha256 "c0dd4a330fae6f60cbb9bf92d24c95df5ea642b7a4809a6f6366ac54f9a36515"
+      url "https://github.com/aice-x/aice/releases/download/v#{version}/aice_#{version}_darwin_amd64.tar.gz",
+        verified: "github.com/aice-x/aice/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
     end
     on_arm do
-      sha256 "0d8b0ce67fab73b8f840deb6ed6102d80c9e0a3962b7f2288e09e4f32e31497b"
-      url "https://github.com/propra-tech/aice/releases/download/v#{version}/aice_#{version}_darwin_arm64.tar.gz",
-        verified: "github.com/propra-tech/aice/",
+      sha256 "9cbb22a751392e00a0c87c47cbdcb127bc3376cb1985af9a0910e9d0c0c5d5d4"
+      url "https://github.com/aice-x/aice/releases/download/v#{version}/aice_#{version}_darwin_arm64.tar.gz",
+        verified: "github.com/aice-x/aice/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "fbe255cd0ff18d1b7d1b036e00887eb15dee09ffbeafd7e3b81e40ded30aa173"
-      url "https://github.com/propra-tech/aice/releases/download/v#{version}/aice_#{version}_linux_amd64.tar.gz",
-        verified: "github.com/propra-tech/aice/",
+      sha256 "58064763e15c908fc54ae79e16c981769fa8de80c1ea51d5190dab175c05562c"
+      url "https://github.com/aice-x/aice/releases/download/v#{version}/aice_#{version}_linux_amd64.tar.gz",
+        verified: "github.com/aice-x/aice/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
     end
     on_arm do
-      sha256 "e69ad891f005a8570ef7a0ee8dd57794a22bd63fae4e4ec165dc46317eea6f2d"
-      url "https://github.com/propra-tech/aice/releases/download/v#{version}/aice_#{version}_linux_arm64.tar.gz",
-        verified: "github.com/propra-tech/aice/",
+      sha256 "f277e9f41cd10753b67f3a2d2cc8a512eba100fcbe39d836a09507941325c4ee"
+      url "https://github.com/aice-x/aice/releases/download/v#{version}/aice_#{version}_linux_arm64.tar.gz",
+        verified: "github.com/aice-x/aice/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
     end
   end
 
   name "aice"
-  desc "Author and manage pages on the Propra intranet (aice)"
-  homepage "https://github.com/propra-tech/aice"
+  desc "Author and manage pages on your organization's aice intranet"
+  homepage "https://github.com/aice-x/aice"
 
   livecheck do
     skip "Auto-generated on release."
