@@ -44,17 +44,17 @@ cask "aice" do
     end
   end
 
-  version "0.20.0"
+  version "0.20.1"
 
   on_macos do
     on_intel do
-      sha256 "67dc3de94ecba591603768f2afd5971b9aaf807072c4967166fc0aa2e15731ed"
+      sha256 "87f19f160cbbf04f090bc4c835126e5406ebb3dc3cb6b8654ddd1ddc2873bcbe"
       url "https://github.com/aice-x/aice/releases/download/v#{version}/aice_#{version}_darwin_amd64.tar.gz",
         verified: "github.com/aice-x/aice/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
     end
     on_arm do
-      sha256 "1ff422940de61f5a585c202dbf0053384c8474ea4c5480cbe1a80b54d96ca53c"
+      sha256 "0c36284ef853d10fa40b55d70a0b6a0d7bcc897b23ab571ffa6494c3f5447d9e"
       url "https://github.com/aice-x/aice/releases/download/v#{version}/aice_#{version}_darwin_arm64.tar.gz",
         verified: "github.com/aice-x/aice/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
@@ -63,13 +63,13 @@ cask "aice" do
 
   on_linux do
     on_intel do
-      sha256 "413038f7b734918625d6cb5921a534be541daf6ee4651be13a6040fed849d2dc"
+      sha256 "89981db09eab0ba3c522de71a149678186c192c6f2a0e570f05ad6d8207f3516"
       url "https://github.com/aice-x/aice/releases/download/v#{version}/aice_#{version}_linux_amd64.tar.gz",
         verified: "github.com/aice-x/aice/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
     end
     on_arm do
-      sha256 "7e44db6fd9e4c7f4f174e4feab7d125eaa5d265ff5af86b29511e218f2a56a2c"
+      sha256 "15113c0caa75aaec20ac20277e46e8c0767172c7610eb92ce03d1f2d6d64ad1d"
       url "https://github.com/aice-x/aice/releases/download/v#{version}/aice_#{version}_linux_arm64.tar.gz",
         verified: "github.com/aice-x/aice/",
         using: GitHubPrivateRepositoryReleaseDownloadStrategy
